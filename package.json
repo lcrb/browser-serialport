@@ -1,7 +1,7 @@
 {
-  "name": "browser-serialport",
+  "name": "browser-serialport2",
   "version": "2.0.3",
-  "description": "Robots in the browser. Just like node-serialport but for browser/chrome apps.",
+  "description": "Updated Browser Serialport",
   "main": "index.js",
   "browser": "./index.js",
   "dependencies": {},
