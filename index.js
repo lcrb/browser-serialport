@@ -402,6 +402,11 @@ function str2ab(str) {
 function buffer2ArrayBuffer(buffer) {
   var buf = new ArrayBuffer(buffer.length);
   var bufView = new Uint8Array(buf);
+
+  if (buffer.hasOwnProperty('data')) {
+    buffer = buffer.data;
+  }
+
   for (var i = 0; i < buffer.length; i++) {
     bufView[i] = buffer[i];
   }
@@ -418,5 +423,6 @@ function toBuffer(ab) {
 }
 
 SerialPort.list = SerialPortList;
+SerialPort.browser2ArrayBuffer = buffer2ArrayBuffer;
 
 module.exports = SerialPort;
