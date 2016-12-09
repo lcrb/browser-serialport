@@ -400,12 +400,12 @@ function str2ab(str) {
 
 // Convert buffer to ArrayBuffer
 function buffer2ArrayBuffer(buffer) {
-  var buf = new ArrayBuffer(buffer.length);
-  var bufView = new Uint8Array(buf);
-
   if (buffer.hasOwnProperty('data')) {
     buffer = buffer.data;
   }
+
+  var buf = new ArrayBuffer(buffer.length);
+  var bufView = new Uint8Array(buf);
 
   for (var i = 0; i < buffer.length; i++) {
     bufView[i] = buffer[i];

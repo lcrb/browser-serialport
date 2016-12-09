@@ -1,6 +1,6 @@
 {
   "name": "browser-serialport2",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Updated Browser Serialport",
   "main": "index.js",
   "browser": "./index.js",
